@@ -6,8 +6,7 @@ export const DELETE_COMMENT = 'DELETE_COMMENT';
 export const THUMBS_UP_COMMENT = 'THUMBS_UP_COMMENT';
 export const THUMBS_DOWN_COMMENT = 'THUMBS_DOWN_COMMENT';
 
-
-function addComment(text) {
+export function addComment(text) {
     return {
         type: ADD_COMMENT,
         id: uuid.v4(),
@@ -15,7 +14,7 @@ function addComment(text) {
     }
 }
 
-function editComment(text, id) {
+export function editComment(text, id) {
     return {
         type: EDIT_COMMENT,
         id,
@@ -23,21 +22,21 @@ function editComment(text, id) {
     }
 }
 
-function deleteComment(id) {
+export function deleteComment(id) {
     return {
         type: DELETE_COMMENT,
         id
     }
 }
 
-function thumbsUpComment(id) {
+export function thumbsUpComment(id) {
     return {
         type: THUMBS_UP_COMMENT,
         id,
     }
 }
 
-function thumbsDownComment(id) {
+export function thumbsDownComment(id) {
     return {
         type: THUMBS_DOWN_COMMENT,
         id,

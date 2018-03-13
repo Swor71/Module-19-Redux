@@ -1,0 +1,40 @@
+.comment {
+    border: 1px solid rebeccapurple;
+    border-radius: 6px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin: 10px auto;
+    max-width: 600px;
+    font-size: 22px;
+    color: rebeccapurple;
+}
+.votes {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    margin-top: 10px;
+    font-size: 22px;
+    color: rebeccapurple;
+}
+
+button {
+    margin: 10px 2px;
+    background: transparent;
+    border: 1px solid rebeccapurple;
+    border-radius: 6px;
+    padding: 7px;
+    outline: none;
+    color: rebeccapurple;
+    transition: .2s;
+    font-size: 18px;
+    width: 34px;
+    height: 34px;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 8px -7px #777;
+}
+
